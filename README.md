@@ -22,15 +22,7 @@ Features:
 ## View the site
 
 Desktop:
-<<<<<<< HEAD
-<<<<<<< HEAD
 * Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map/)
-=======
-* Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map)
->>>>>>> 1c4f4a99aa0f625ab9326c3d7af58d73502d8cbc
-=======
-* Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map)
->>>>>>> 1c4f4a99aa0f625ab9326c3d7af58d73502d8cbc
 or
 * `git clone` the repo and launch index.html
 * Click a property to display and center to its map marker and view its info
@@ -38,15 +30,7 @@ or
 * Use zoom box to specify a favorite neighborhood to view
 
 Mobile:
-<<<<<<< HEAD
-<<<<<<< HEAD
 * Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map/)
-=======
-* Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map)
->>>>>>> 1c4f4a99aa0f625ab9326c3d7af58d73502d8cbc
-=======
-* Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map)
->>>>>>> 1c4f4a99aa0f625ab9326c3d7af58d73502d8cbc
 or
 * `git clone` the repo and launch index.html
 * Open developer tools and click 'Console' to check mobile version and responsiveness 
