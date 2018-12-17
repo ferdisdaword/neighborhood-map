@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seattle Retrowave</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="main-menu-desk col-md-3 text-container">
+            <img src="content/img/retrowave.jpg">
+            <h2>Property Search</h2>
+            <div id="search">
+                <form id="property-search" class="search-area" data-bind="submit: filterProperties">
+                    <h2><input id="search-text" type="text" name="search-string" placeholder='Search for property!'>
+                    <input id='search-to-text' type="submit" value="search" class="search-btn text-uppercase"></h2>
+                </form>
+            </div>
+            <ul data-bind="foreach: filteredPropertyList" class="text-uppercase desktop-list">
+                <li data-bind="text: name, click: $parent.propertyClick"></li>
+            </ul>
+            <h2>Looking for a favorite area of the city?</h2>
+            <div>
+                <h2><input id="zoom-to-area-text" type="text" placeholder="Enter your favorite area!">
+                <input id="zoom-to-area" type="button" value="zoom" class="search-btn text-uppercase"></h2>
+            </div>
+        </section>
+
+        <section class="col-md-9 map-container">
+            <div id="map" class="main-map"></div>
+        </section>
+
+        <nav class="mobile main-menu">
+            <ul data-bind="foreach: filteredPropertyList" class="mobile-list">
+                <li data-bind="text: name, click: $parent.propertyClick" class="mobile-item"></li>
+            </ul>
+        </nav>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header pull-right">
+                <a id="nav-expander" class="nav-expander fixed" href="#"><span></span></a>
+            </div>
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGJ5vXsMVHTZHa7-OC6wHV--mY_AHq1lM"></script>
+        <script src="js/lib/jquery-3.3.1.min.js "></script>
+        <script src="js/lib/knockout-3.4.2.js "></script>
+        <script src="js/mapstyle.js "></script>
+        <script src="js/markers.js "></script>
+        <script src="js/map.js "></script>
+        <script src="js/navmenu.js "></script>
+    </div>
+</body>
+</html>
