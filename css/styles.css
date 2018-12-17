@@ -61,7 +61,7 @@ h4
 
     margin: 0;
 
-    color: black;
+    color: #333334;
 }
 
 h5
@@ -70,7 +70,7 @@ h5
 
     margin: 0;
 
-    color: #d0d7d9;
+    color: #75617a;
 }
 
 h6
@@ -79,7 +79,7 @@ h6
 
     margin: .3em 0 0 0;
 
-    color: #d0d7d9;
+    color: #3506ff;
 }
 
 hr
