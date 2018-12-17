@@ -23,7 +23,11 @@ Features:
 
 Desktop:
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map/)
+=======
+* Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map)
+>>>>>>> 1c4f4a99aa0f625ab9326c3d7af58d73502d8cbc
 =======
 * Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map)
 >>>>>>> 1c4f4a99aa0f625ab9326c3d7af58d73502d8cbc
@@ -35,7 +39,11 @@ or
 
 Mobile:
 <<<<<<< HEAD
+<<<<<<< HEAD
 * Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map/)
+=======
+* Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map)
+>>>>>>> 1c4f4a99aa0f625ab9326c3d7af58d73502d8cbc
 =======
 * Open [ferdisdaword.github.io/neighborhood-map](https://ferdisdaword.github.io/neighborhood-map)
 >>>>>>> 1c4f4a99aa0f625ab9326c3d7af58d73502d8cbc
