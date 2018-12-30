@@ -1,5 +1,6 @@
 // Initialize the map
 var map;
+var georssLayer;
 
 // Google API KEY
 var API_KEY = "AIzaSyBGJ5vXsMVHTZHa7-OC6wHV--mY_AHq1lM";
@@ -25,6 +26,10 @@ var ViewModel = function() {
             disableDefaultUI: false,
             mapTypeControl: false
         });
+        georssLayer = new google.maps.KmlLayer({
+          url: 'http://api.flickr.com/services/feeds/geo/?tags=Seattle&lang=en-us&format=feed-georss',
+        });
+        georssLayer.setMap(map);
     };
     // List properties from model
     self.buildProperties = function() {
@@ -43,14 +48,14 @@ var ViewModel = function() {
     // Function to handle clicking on a property (either in list or marker)
     self.propertyClick = function(property) {
         // Set the content of the infoWindow
-        var infoContent = '<div><h4 id="property-name">' + property.name() + 
-                            '</h4>' + 
-                            '<h5 id="property-address">' + property.address() + 
-                            '</h5>' + 
-                            '<h6 id="property-type">' + property.type() + 
-                            '</h6>' + 
-                            '</div><br>' + 
-                            '<img class="images" src= http://maps.googleapis.com/maps/api/streetview?size=300x200&location=' + property.lat() + ',' + property.lng() + '&key=' + API_KEY + '>';        
+        var infoContent = '<div><h4 id="property-name">' + property.name() +
+                            '</h4>' +
+                            '<h5 id="property-address">' + property.address() +
+                            '</h5>' +
+                            '<h6 id="property-type">' + property.type() +
+                            '</h6>' +
+                            '</div><br>' +
+                            '<img class="images" src= http://maps.googleapis.com/maps/api/streetview?size=300x200&location=' + property.lat() + ',' + property.lng() + '&key=' + API_KEY + '>';
         infoWindow.setContent(infoContent);
         // Recenter map to clicked property
         map.panTo(new google.maps.LatLng(property.lat(), property.lng()));
