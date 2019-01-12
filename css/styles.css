@@ -3,15 +3,13 @@
 html,
 body,
 .container,
-.main-map
-{
+.main-map {
     width: 100%;
     height: 100%;
     margin: 0;
 }
 
-body
-{
+body {
     font-family: Roboto,sans-serif;
     font-weight: 300;
 
@@ -21,42 +19,36 @@ body
     filter: alpha(opacity=90);
 }
 
-a
-{
+a {
     text-decoration: none;
 
     color: #f3ebec;
 }
 
-a:hover
-{
+a:hover {
     color: #f706cf;
 }
 
-h1
-{
+h1 {
     font-family: Roboto,sans-serif;
     font-size: 2em;
 
     color: #f3ebec;
 }
 
-h2
-{
+h2 {
     font-family: Roboto,sans-serif;
 
     color: #f706cf;
 }
 
-h3
-{
+h3 {
     font-family: Roboto,sans-serif;
 
     color: #d9d9d9;
 }
 
-h4
-{
+h4 {
     font-size: 1.2em;
 
     margin: 0;
@@ -64,8 +56,7 @@ h4
     color: #333334;
 }
 
-h5
-{
+h5 {
     font-size: 1em;
 
     margin: 0;
@@ -73,8 +64,7 @@ h5
     color: #75617a;
 }
 
-h6
-{
+h6 {
     font-size: .9em;
 
     margin: .3em 0 0 0;
@@ -82,8 +72,7 @@ h6
     color: #3506ff;
 }
 
-hr
-{
+hr {
     width: 39em;
     height: .2em;
     margin: 20px 0 20px 0;
@@ -92,13 +81,11 @@ hr
     background: #d0d7d9;
 }
 
-img
-{
+img {
     width: 98%;
 }
 
-ul
-{
+ul {
     font-size: 2em;
 
     padding-left: 0;
@@ -106,40 +93,34 @@ ul
     list-style-type: none;
 }
 
-li
-{
+li {
     margin: .5em 0;
 
     color: #d9d9d9;
 }
 
-li:hover
-{
+li:hover {
     color: #bbb8b8;
 }
 
-.main-map
-{
+.main-map {
     position: relative;
 
     height: 100vh;
 }
 
-.main-menu
-{
+.main-menu {
     opacity: .9;
     background-color: #333334;
 
     filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
-.mobile-list
-{
+.mobile-list {
     padding-left: 1em;
 }
 
-nav
-{
+nav {
     font-size: 15px;
 
     position: fixed;
@@ -161,8 +142,7 @@ nav
     background: #2d2f33;
 }
 
-.nav-expanded
-{
+.nav-expanded {
     margin-left: 0;
 
     -webkit-transition: right .4s ease-in-out 0s;
@@ -171,18 +151,15 @@ nav
             transition: right .4s ease-in-out 0s;
 }
 
-.nav-expanded a.nav-expander.fixed
-{
+.nav-expanded a.nav-expander.fixed {
     right: 15em;
 }
 
-.nav-expanded nav
-{
+.nav-expanded nav {
     right: 0;
 }
 
-.nav-expander
-{
+.nav-expander {
     font-size: 1em;
 
     position: absolute;
@@ -208,8 +185,7 @@ nav
 
 .nav-expander span,
 .nav-expander span:before,
-.nav-expander span:after
-{
+.nav-expander span:after {
     position: absolute;
 
     display: block;
@@ -224,88 +200,75 @@ nav
     background: white;
 }
 
-.nav-expander span:before
-{
+.nav-expander span:before {
     top: -10px;
 }
 
-.nav-expander span:after
-{
+.nav-expander span:after {
     bottom: -10px;
 }
 
-.nav-expander:hover
-{
+.nav-expander:hover {
     cursor: pointer;
 }
 
-.nav-expander.fixed
-{
+.nav-expander.fixed {
     position: fixed;
 
     display: none;
 }
 
-#search-text
-{
+#search-text {
     position: relative;
 
     width: 60%;
 }
 
-#search-to-text
-{
+#search-to-text {
     width: 30%;
 }
 
-.text-container
-{
+.text-container {
     padding-left: .95em;
 }
 
-.text-thin
-{
+.text-thin {
     font-weight: 100;
 }
 
-#pano
-{
+#pano {
     width: 200px;
     height: 200px;
 }
 
-#zoom-to-area-text
-{
+#zoom-to-area-text {
     position: relative;
 
     width: 60%;
 }
 
-#zoom-to-area
-{
+#zoom-to-area {
     width: 30%;
 }
 
-@media screen and (max-width: 992px)
-{
-    .desktop-list
-    {
+@media screen and (max-width: 992px) {
+    .desktop-list {
         display: none;
     }
+
     h1,
     h3,
-    .main-map
-    {
+    .main-map {
         position: absolute;
 
         height: 80vh;
     }
-    .nav-expander.fixed
-    {
+
+    .nav-expander.fixed {
         display: block;
     }
-    .search-area
-    {
+
+    .search-area {
         height: 5vh;
         margin: .5em;
     }
